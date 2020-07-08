@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper Scissors</title>
+    <script src="script.js"> </script>
+    <link rel="stylesheet" href="style.css"> </style>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <script class="js"></script>
+</head>
+<body>
+    
+    <header>
+        <h1> Rock, Paper, Scissors!</h1>
+    </header>
+
+    <main> 
+        <h2> Instructions: </h2>
+        <p> Select either "rock", "paper", or "scissors"</p>
+        <form class="player-selection">  
+            <select class="player-options" id="player-options">
+                <option value="Rock"> Rock </option>
+                <option value="Paper"> Paper </option>
+                <option value="Scissors"> Scissors </option>
+            </select>
+        </form>
+
+        <div onclick="playGame()" class="submit-button" id="submit-button"> 
+
+            <p class="submit" > Submit </p>
+
+        </div>
+
+    </main>
+
+    <section class="actions"> 
+
+        <div class="playerComputer"> 
+            <h4> Computer Throws: </h4>
+            <p class="player-action" id="computer-action"> </p>
+        </div>
+        <div class="playerHuman"> 
+            <h4> Player Throws: </h4>
+            <p class="player-action" id="human-action"> </p>
+        </div>
+    </section> 
+
+    <section class="result"> 
+
+        <h4> Outcome: </h4>
+        <p class="outcome" id="outcome"> </p>
+
+    </section>
+</body>
+</html>
